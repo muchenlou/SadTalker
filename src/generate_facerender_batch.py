@@ -11,6 +11,7 @@ def get_facerender_data(coeff_path, pic_path, first_coeff_path, audio_path,
 
     semantic_radius = 13
     video_name = os.path.splitext(os.path.split(coeff_path)[-1])[0]
+    video_name = video_name.split("##")[0]
     txt_path = os.path.splitext(coeff_path)[0]
 
     data={}
